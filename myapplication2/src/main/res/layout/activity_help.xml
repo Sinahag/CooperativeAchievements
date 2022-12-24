@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help"
+    android:background="@drawable/questionbg"
+    >
+
+    <TextView
+        android:id="@+id/HelpPage"
+        android:layout_width="391dp"
+        android:layout_height="490dp"
+        android:fontFamily="casual"
+        android:text="@string/help"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Notice"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/Notice"
+        android:layout_width="350dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/opendyslexic"
+        android:gravity="center_horizontal"
+        android:text="@string/add_a_new_configuration_n_when_you_first_play_the_game"
+        android:textColor="#C81111"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+</androidx.constraintlayout.widget.ConstraintLayout>

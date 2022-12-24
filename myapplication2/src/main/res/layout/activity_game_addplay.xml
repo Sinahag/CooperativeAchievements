@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluebg">
+
+    <Spinner
+        android:id="@+id/difficultyLevelSpinner"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toEndOf="@+id/diffultyLevelText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/diffultyLevelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/difficulty"
+        app:layout_constraintEnd_toStartOf="@+id/gameConfigSpinner"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreOfPlayersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/score_of_all_players"
+        app:layout_constraintEnd_toStartOf="@+id/scoreTextEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/scoreTextEdit"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="280dp"
+        android:autofillHints=""
+        android:editable="false"
+        android:ems="10"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/scoreOfPlayersText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/numPlayersTextEdit"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="220dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/numPlayersText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/numPlayersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/number_of_players"
+        app:layout_constraintEnd_toStartOf="@+id/numPlayersTextEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gamesPlayedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/game_played"
+        app:layout_constraintEnd_toStartOf="@+id/gameConfigSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diffultyLevelText" />
+
+    <TextView
+        android:id="@+id/addGamePlayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="528dp"
+        android:layout_marginTop="572dp"
+        android:text="@string/add_game_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/gameConfigSpinner"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/gamesPlayedText"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyLevelSpinner"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/create"
+        app:layout_constraintEnd_toEndOf="@+id/btn_addPhoto"
+        app:layout_constraintStart_toStartOf="@+id/btn_addPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addPhoto" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="239dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/theme"
+        app:layout_constraintTop_toBottomOf="@+id/scoreTextEdit"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="364dp"
+        android:text="Theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculateScoreBtn"
+        android:layout_width="49dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="4dp"
+        android:paddingRight="0dp"
+        app:icon="@drawable/calculator"
+        app:iconPadding="1dp"
+        app:iconSize="50dp"
+        app:layout_constraintStart_toEndOf="@+id/scoreTextEdit"
+        app:layout_constraintTop_toBottomOf="@+id/numPlayersTextEdit"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_addPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Change photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <ImageView
+        android:id="@+id/imw_photo_game"
+        android:layout_width="149dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
